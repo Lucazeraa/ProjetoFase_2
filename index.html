@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O tal do PetShop</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <header class="cabecalho">
+            <div class="logo">
+            <img src="./img/Logo_carrinho.jpg"></img>
+        </div>
+        <div class="barra-de-pesquisa">
+            <input type="text" id="pesquisar" placeholder="Pesquisar...">
+            <button onclick="executarPesquisa()">Pesquisar</button>
+        </div>
+        <nav>
+            <!-- Links de navegação -->
+        </nav>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href=index.html class="botao-menu">Sobre a loja</a>
+            </li>
+            <li>
+                <a href="cadastro.html" class="botao-menu">Cadastro</a>
+            </li>
+            <li>
+                <a href="contato.html" class="botao-menu">Contato</a>
+            </li>
+            <li>
+                <a href="produto.html" class="botao-menu">Produtos</a>
+            </li>
+            <li>
+                <a href="Servicos.html" class="botao-menu">Nossos Serviços</a>
+            </li>
+        </ul>
+   </nav>   
+
+ <!-- Botão "Agendar Agora" no canto inferior esquerdo -->
+ <a href="pagina-de-agendamento.html" class="botao-circular agendar">Agendar Agora</a>
+
+ <!-- Botão "Compre Agora" no canto inferior direito -->
+ <a href="pagina-de-produtos.html" class="botao-circular comprar">Compre Agora</a>
+
+
+    <header>
+        <div class="center">
+            <img src="./img/PetShop.jpg"></img>
+            <h1>PetShop</h1>
+        </div>
+    </header>  
+
+    <div class="carrossel">
+        <div class="produtos">
+            <article class="produto">
+            <img src="./img/Racao.jpg"></img>
+            <h2>Ração Premium</h2>
+            <p>Sem corantes artificiais</p>
+            <p>Com Vitaminas e Minerais que o ajudam a se manter forte e saudável</p>
+            <p> Com Fibras Naturais para uma digestão ótima e fezes firmes</p>
+            <p>Proteína da carne e balanço ideal de aminoácidos para músculos fortes.</p>
+            <p class="preco">Preço: R$ 29,99</p>
+            <a href="#" class="botao-comprar">Comprar</a>
+        </article>
+
+        <article class="produto">
+            <img src="./img/Brinquedo.jpg"></img>
+            <h2>Brinquedo para Cachorro</h2>
+            <p>Brinquedo Mordedor para Cachorro DentalBone Osso</p>
+            <p>Ajuda a entreter e divertir seu cão</p>
+            <p class="preco">Preço: R$ 12,99</p>
+            <a href="#" class="botao-comprar">Comprar</a>
+        </article>
+
+        <article class="produto">
+            <img src="./img/Kennel.jpg"></img>
+            <h2>Kennel</h2>
+            <p>Custo-benefício,</p>
+            <p>Conforto</p>
+            <p>Durabilidade</p>
+            <p>Fácil de montar</p>
+            <p class="preco">Preço: R$ 65,90</p>
+            <a href="#" class="botao-comprar">Comprar</a>
+        </article>
+
+        <script>
+            // Seleciona a logo pelo ID
+            const logo = document.getElementById("logo");
+        
+            // Adiciona um evento de clique à logo
+            logo.addEventListener("click", function() {
+                // Redireciona para a página do carrinho
+                window.location.href = "pagina-do-carrinho.html";
+            });
+        </script>
+        
+</body>
+</html>
